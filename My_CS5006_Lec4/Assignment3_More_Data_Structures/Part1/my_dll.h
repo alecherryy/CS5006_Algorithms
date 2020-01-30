@@ -9,7 +9,7 @@
 // - You should not have any 'printf' statements in your DLL functions. 
 //   - (You may consider using these printf statements to debug, but they should be removed from your final version)
 // ==================================================
-#define MYDLL_H
+#ifndef MYDLL_H
 #define MYDLL_H
 #include <stdlib.h> // Bring in standard functions like printf
 #include <stdio.h> // Bring in malloc and free
