@@ -1,0 +1,77 @@
+# Simply copy and paste the output from your terminal here!
+
+COMMAND #1
+a.out  ExternalResources  images  main.c  output.txt  README.md
+-bash-4.2$ vim main.c 
+-bash-4.2$ ls
+a.out  ExternalResources  images  main.c  output.txt  README.md
+-bash-4.2$ vim a.out 
+-bash-4.2$ rm a.out 
+-bash-4.2$ ls
+ExternalResources  images  main.c  output.txt  README.md
+
+COMMAND #2
+-bash-4.2$ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add/rm <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#   deleted:    a.out
+#   modified:   main.c
+#   modified:   output.txt
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+
+COMMAND #3
+-bash-4.2$ git add output.txt
+-bash-4.2$ git commit -m "updating output.txt"
+[master 1864994] updating output.txt
+Committer: Alessia Pizzoccheri <apizzoccheri@login-students.ccs.neu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+        After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+    1 file changed, 26 insertions(+)
+
+COMMAND #4
+-bash-4.2$ git commit -m "updating output.txt"
+[master 1864994] updating output.txt
+Committer: Alessia Pizzoccheri <apizzoccheri@login-students.ccs.neu.edu>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+         After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+    1 file changed, 26 insertions(+)
+    -bash-4.2$ vim output.txt 
+    -bash-4.2$ git push origin master 
+    Username for 'https://github.ccs.neu.edu': apizzoccheri
+    Password for 'https://apizzoccheri@github.ccs.neu.edu': 
+    Counting objects: 7, done.
+    Delta compression using up to 48 threads.
+    Compressing objects: 100% (4/4), done.
+    Writing objects: 100% (4/4), 664 bytes | 0 bytes/s, done.
+    Total 4 (delta 2), reused 0 (delta 0)
+    remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+    To https://github.ccs.neu.edu/apizzoccheri/My_CS5006_Lec2.git
+    9ea8ff7..1864994  master -> master
+
+COMMAND #5
+-bash-4.2$ cd Lab1_UnixTerminal/
+-bash-4.2$ ls
+a.out  ExternalResources  images  main.c  output.txt  README.md
+-bash-4.2$ vim main.c 
