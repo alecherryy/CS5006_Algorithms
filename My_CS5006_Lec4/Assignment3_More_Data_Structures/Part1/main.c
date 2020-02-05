@@ -41,9 +41,9 @@ int main(){
     printf("Add to back? %d\n",dll_push_back(dll,4));
     printf("New item's tail: %d\n",dll->tail->data);
     // printf("ITEM: %d\n",dll_get(dll,4));
-    // printf("ITEM: %d\n",dll_insert(dll,2,4));
-    // printf("Total items: %d\n",dll->count);
-    // printf("ITEM: %d\n",dll_remove(dll,1));
+    printf("ITEM: %d\n",dll_insert(dll,2,4));
+    printf("Total items: %d\n",dll->count);
+    printf("ITEM: %d\n",dll_remove(dll,1));
     printf("Head next: %d\n",dll->head->next->data);
     // printf("Total items: %d\n",dll->count);
     //printf("Insert a new item: %d\n",dll_insert(dll,4,9));
